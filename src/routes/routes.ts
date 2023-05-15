@@ -1,5 +1,6 @@
 import { LazyExoticComponent, lazy } from "react";
 import { NoLazy } from "../01-lazyLoad/pages";
+import { ShoppingPage } from "../02-componet-patterns/pages/ShoppingPage";
 // import { LazyPage1, LazyPage2, LazyPage3 } from "../01-lazyLoad/pages";
 
 type JSXComponent = () => JSX.Element;
@@ -24,9 +25,9 @@ export const routes: Route[] = [
         name: 'Lazy Layout Dash'
     },
     {
-        to: '/no-lazy',
-        path: 'no-lazy',
-        Componet: NoLazy,
-        name: 'No Lazy'
+        to: '/shopping',
+        path: 'shopping',
+        Componet: ShoppingPage,
+        name: 'Shoopin Page'
     },
 ];
