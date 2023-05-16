@@ -7,6 +7,7 @@ export interface ProductContextProps {
 export interface PropsCardProduct {
     product: Product;
     children?: React.ReactElement | React.ReactElement[];
+    className?: string
 }
 
 export interface Product {
@@ -18,4 +19,6 @@ export interface Product {
 export interface ProductImageProps {
     img?: string
     title?: string
+    className?: string
+    style? : React.CSSProperties
 }
