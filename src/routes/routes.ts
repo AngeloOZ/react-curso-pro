@@ -1,5 +1,5 @@
 import { LazyExoticComponent, lazy } from "react";
-import { NoLazy } from "../01-lazyLoad/pages";
+// import { NoLazy } from "../01-lazyLoad/pages";
 import { ShoppingPage } from "../02-componet-patterns/pages/ShoppingPage";
 // import { LazyPage1, LazyPage2, LazyPage3 } from "../01-lazyLoad/pages";
 
@@ -13,9 +13,9 @@ interface Route {
 }
 
 const LazyLayout = lazy(() => import(/* webpackChunkName: "LazyLayout"*/'../01-lazyLoad/layout/LazyLayout'));
-const Lazy1 = lazy(() => import(/* webpackChunkName: "Lazy1"*/'../01-lazyLoad/pages/LazyPage1'));
-const Lazy2 = lazy(() => import(/* webpackChunkName: "Lazy2"*/'../01-lazyLoad/pages/LazyPage2'));
-const Lazy3 = lazy(() => import(/* webpackChunkName: "Lazy3"*/'../01-lazyLoad/pages/LazyPage3'));
+// const Lazy1 = lazy(() => import(/* webpackChunkName: "Lazy1"*/'../01-lazyLoad/pages/LazyPage1'));
+// const Lazy2 = lazy(() => import(/* webpackChunkName: "Lazy2"*/'../01-lazyLoad/pages/LazyPage2'));
+// const Lazy3 = lazy(() => import(/* webpackChunkName: "Lazy3"*/'../01-lazyLoad/pages/LazyPage3'));
 
 export const routes: Route[] = [
     {
