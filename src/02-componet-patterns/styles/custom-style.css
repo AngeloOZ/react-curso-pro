@@ -12,7 +12,13 @@
   border-radius: 20px;
 }
 
-.custom-buttons > *{
-    color: #ffffff;
-    border-color: #ffffff;
+.custom-buttons > * {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.shopping-cart {
+  position: fixed;
+  top: 0;
+  right: 0;
 }

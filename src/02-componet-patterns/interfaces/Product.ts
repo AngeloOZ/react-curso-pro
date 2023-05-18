@@ -22,3 +22,12 @@ export interface ProductImageProps {
     className?: string
     style? : React.CSSProperties
 }
+
+export interface OnChangeArgs {
+    product: Product
+    count: number
+}
+
+export interface ProductInCart extends Product {
+    count: number;
+ }
