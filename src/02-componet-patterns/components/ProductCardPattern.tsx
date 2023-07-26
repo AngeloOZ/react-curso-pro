@@ -5,8 +5,9 @@ import { createContext } from 'react';
 
 import { ProductContextProps, Product, OnChangeArgs, InitialValues, ProductCardHandle } from '../interfaces/Product';
 
-
+// Context
 export const ProductContext = createContext({} as ProductContextProps);
+// Provider
 const { Provider } = ProductContext;
 
 
