@@ -1,7 +1,7 @@
-import { LazyExoticComponent, lazy } from "react";
-// import { NoLazy } from "../01-lazyLoad/pages";
-import { ShoppingPage } from "../02-componet-patterns/pages/ShoppingPage";
-// import { LazyPage1, LazyPage2, LazyPage3 } from "../01-lazyLoad/pages";
+import { LazyExoticComponent } from "react";
+import { RegisterPage } from "../03-forms/pages/RegisterPage";
+import { FormikBasicPage } from "../03-forms/pages/FormikBasicPage";
+
 
 type JSXComponent = () => JSX.Element;
 
@@ -12,22 +12,22 @@ interface Route {
     name: string;
 }
 
-const LazyLayout = lazy(() => import(/* webpackChunkName: "LazyLayout"*/'../01-lazyLoad/layout/LazyLayout'));
+// const LazyLayout = lazy(() => import(/* webpackChunkName: "LazyLayout"*/'../01-lazyLoad/layout/LazyLayout'));
 // const Lazy1 = lazy(() => import(/* webpackChunkName: "Lazy1"*/'../01-lazyLoad/pages/LazyPage1'));
 // const Lazy2 = lazy(() => import(/* webpackChunkName: "Lazy2"*/'../01-lazyLoad/pages/LazyPage2'));
 // const Lazy3 = lazy(() => import(/* webpackChunkName: "Lazy3"*/'../01-lazyLoad/pages/LazyPage3'));
 
 export const routes: Route[] = [
     {
-        path: '/Lazy1/*',
-        to: '/lazy1/',
-        Componet: LazyLayout,
-        name: 'Lazy Layout Dash'
+        path: '/register/*',
+        to: '/register/',
+        Componet: RegisterPage,
+        name: 'Registrarse'
     },
     {
-        to: '/shopping',
-        path: 'shopping',
-        Componet: ShoppingPage,
-        name: 'Shoopin Page'
+        to: '/formik-basic',
+        path: 'formik-basic',
+        Componet: FormikBasicPage,
+        name: 'Formik ejemplo básico'
     },
 ];
