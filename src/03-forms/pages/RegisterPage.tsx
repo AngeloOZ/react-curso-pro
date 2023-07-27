@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import '../styles/styles.css';
 import { useForm } from '../hooks/useForm';
 
@@ -11,7 +10,7 @@ interface RegisterData {
 
 export const RegisterPage = () => {
 
-    const { formData, onChange, resetForm, isValidEmail, email, name, password, password2 } = useForm<RegisterData>({ email: '', name: '', password: '', password2: '' });
+    const { formData, onChange, resetForm, email, name, password, password2 } = useForm<RegisterData>({ email: '', name: '', password: '', password2: '' });
 
 
 
